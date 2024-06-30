@@ -1,0 +1,77 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "4d8b9b04-1d80-412f-b77e-bacabc34b5d5",
+  "location" : "warehouse_loc/my_database/my_table",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1719779834603,
+  "last-column-id" : 2,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id",
+      "required" : false,
+      "type" : "long"
+    }, {
+      "id" : 2,
+      "name" : "data",
+      "required" : false,
+      "type" : "string"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "victorgalan",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 6659378092005420129,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 6659378092005420129,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 6659378092005420129,
+    "timestamp-ms" : 1719779834603,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1719777773278",
+      "added-data-files" : "1",
+      "added-records" : "1",
+      "added-files-size" : "647",
+      "changed-partition-count" : "1",
+      "total-records" : "1",
+      "total-files-size" : "647",
+      "total-data-files" : "1",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "warehouse_loc/my_database/my_table/metadata/snap-6659378092005420129-1-f029a81c-8d9a-49bc-9f30-9e44ee2e68f6.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1719779834603,
+    "snapshot-id" : 6659378092005420129
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1719779322627,
+    "metadata-file" : "warehouse_loc/my_database/my_table/metadata/v1.metadata.json"
+  } ]
+}
