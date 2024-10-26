@@ -1,10 +1,10 @@
 {
   "format-version" : 2,
-  "table-uuid" : "19598083-51bf-49f6-8ef7-b548cafadf40",
+  "table-uuid" : "8d63a7e2-0233-4d79-a9d3-07b41cf1c825",
   "location" : "warehouse_loc/my_table",
   "last-sequence-number" : 0,
-  "last-updated-ms" : 1719777871616,
-  "last-column-id" : 2,
+  "last-updated-ms" : 1729234484333,
+  "last-column-id" : 4,
   "current-schema-id" : 0,
   "schemas" : [ {
     "type" : "struct",
@@ -19,14 +19,29 @@
       "name" : "surname",
       "required" : false,
       "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "country",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 4,
+      "name" : "birthday",
+      "required" : false,
+      "type" : "date"
     } ]
   } ],
   "default-spec-id" : 0,
   "partition-specs" : [ {
     "spec-id" : 0,
-    "fields" : [ ]
+    "fields" : [ {
+      "name" : "birthday",
+      "transform" : "identity",
+      "source-id" : 4,
+      "field-id" : 1000
+    } ]
   } ],
-  "last-partition-id" : 999,
+  "last-partition-id" : 1000,
   "default-sort-order-id" : 0,
   "sort-orders" : [ {
     "order-id" : 0,
